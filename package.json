@@ -1,0 +1,24 @@
+{
+  "name": "catalog",
+  "description": "Product Catalog",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madhuraman87/CMPE226-ProductCatalog.git"
+  },
+  "dependencies": {
+    "express": "*",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "*",
+    "mongodb": "*",
+    "mongoskin": "*"
+  }
+}

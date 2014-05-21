@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    input(type="text", id="searchQuery")
+    button(onclick="search();") Search
+    h1= title
+    
+    // Wrapper
+    #wrapper
+
+        // USER LIST
+        #userList
+            h2 Product List
+            table
+                thead
+                    th Brand
+                    th Type
+                    th Subtype
+                tbody
+        // /USER LIST
+
+    // /WRAPPER

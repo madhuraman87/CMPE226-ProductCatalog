@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    h1= title
+    
+    // Wrapper
+    #wrapper
+
+        // USER LIST
+        #userList
+            h2 Product List
+            table
+                thead
+                    th Brand
+                    th Type
+                tbody
+        // /USER LIST
+
+        // USER INFO
+        #userInfo
+            h2(align="center") Product Info
+            p(align="justify")
+                strong Subtype:
+                |  <span id='userInfoSubtype'></span>
+                br
+                br
+                strong Colour:
+                |  <span id='userInfoColor'></span>
+                br
+                br
+                strong Price:
+                |  <span id='userInfoPrice'></span>
+                br
+                br
+                strong Weight:
+                |  <span id='userInfoWeight'></span>
+                br
+                br 
+                strong Dimensions:
+                |  <span id='userInfoDimen'></span>  
+                br 
+                br
+                strong Desc:
+                |  <span id='userInfoDesc'></span>
+        // /USER INFO
+
+    // /WRAPPER

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	a(href="/searchpage" target="_self") Search
+	h1= title
+	ul(list-style-type="upper-roman" list-style-position="inside")
+		each record, i in items
+			if record.Product == "Television"
+				li
+					h3
+						a(href="/tvproducts" target="_self")= record.Product
+			if record.Product == "Cosmetics"
+				li
+					h3
+						a(href="/cosproducts" target="_self")= record.Product
