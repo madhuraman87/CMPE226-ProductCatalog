@@ -1,4 +1,4 @@
 CMPE226-ProductCatalog
 ======================
 
-Assignment for Database Design class
+This is an assignment given for CMPE226 - Database Design class to develop a simple eCommerce like website using Nodejs and MongoDB.
