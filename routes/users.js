@@ -33,6 +33,26 @@ router.get('/cosproductitems', function(req, res) {
 }); 
 
 
+/* GET Product Items page. */
+router.get('/booksproductitems', function(req, res) {
+	var db = req.db;
+	db.collection('product').find({ 'type': { '$regex': 'Books', '$options': 'i' } }).toArray(function (err, items){
+		//console.log(items);
+		res.json(items);
+	});
+}); 
+
+
+/* GET Product Items page. */
+router.get('/fridgeproductitems', function(req, res) {
+	var db = req.db;
+	db.collection('product').find({ 'type': { '$regex': 'Fridge', '$options': 'i' } }).toArray(function (err, items){
+		//console.log(items);
+		res.json(items);
+	});
+});
+
+
 /* GET Search results */
 router.get('/search', function(req, res) {
 	var db = req.db;
@@ -46,7 +66,11 @@ router.get('/search', function(req, res) {
 			{ 'price': { '$regex': q, '$options': 'i' } },
 			{ 'subtype': { '$regex': q, '$options': 'i' } },
 			{ 'type': { '$regex': q, '$options': 'i' } },
-			{ 'weight': { '$regex': q, '$options': 'i' } }
+			{ 'weight': { '$regex': q, '$options': 'i' } },
+			{ 'isbn': { '$regex': q, '$options': 'i' } },
+			{ 'language': { '$regex': q, '$options': 'i' } },
+			{ 'publisher': { '$regex': q, '$options': 'i' } },
+			{ 'author': { '$regex': q, '$options': 'i' } }
 		]
 	}).toArray(function(err, items) {
 		// console.log(items);

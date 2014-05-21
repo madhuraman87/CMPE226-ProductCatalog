@@ -13,3 +13,11 @@ block content
 				li
 					h3
 						a(href="/cosproducts" target="_self")= record.Product
+			if record.Product == "Books"
+				li
+					h3
+						a(href="/booksproducts" target="_self")= record.Product
+			if record.Product == "Fridge"
+				li
+					h3
+						a(href="/fridgeproducts" target="_self")= record.Product

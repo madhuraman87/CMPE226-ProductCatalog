@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     //Product Name link click
     $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
-    $('#userList table tbody').on('click', 'td a.linkshowproduct', showProductInfo);
+    // $('#userList table tbody').on('click', 'td a.linkshowproduct', showProductInfo);
 });
 
 // Functions =============================================================
@@ -90,7 +90,12 @@ function showUserInfo(event) {
     $('#userInfoWeight').text(thisItemObject.weight);
     $('#userInfoDimen').text(thisItemObject.dimensions);
     $('#userInfoDesc').text(thisItemObject.desc);
+    $('#userInfoPub').text(thisItemObject.publisher);
+    $('#userInfoLang').text(thisItemObject.language);
+    $('#userInfoAuthor').text(thisItemObject.author);
+    $('#userInfoIsbn').text(thisItemObject.isbn);
 };
+
 
 function search() {
     populateSearch(true, $('#searchQuery').val());
