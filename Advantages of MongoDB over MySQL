@@ -1,0 +1,17 @@
+Advantages of MongoDB over SQL
+
+1. MongoDB stores data as collection of JSON documents whereas MySQL stores data in tables as rows of data.
+
+2. MySQL makes use of querying language wherein we put together a string query whereas in MongoDB we use object querying which is just passing a document and mentioning what we are querying for.
+
+3. MySQL supports JOINs with which we can query across multiple tables. In MongoDB, it supports multiple datatypes and also allows embedding documents or attachments into another.
+
+4. MySQL supports atomic transactions whereas MongoDB doesn support it.
+
+5. In MongoDB there is no definite schema which has to be followed. Different documents can co exist having different schema. Whereas in MySQL, the schema should be defined before.
+
+6. MongoDB has better performance levels than MySQL.
+
+7. MongoDB is used when we have huge datasets as it has an advantage over relational database wherein adding additional rows can lock the entire database and create performance issues.
+
+8. Mainly MongoDB is used when the data structure is complex and its difficult to model in a relational database system and also when we need better performance levels.
